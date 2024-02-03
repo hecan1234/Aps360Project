@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.3)  3 FEB 2024 12:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.2.3)  3 FEB 2024 12:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -340,8 +340,7 @@ tex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count286
 \l__pdf_internal_box=\box53
-)
-No file APS360_Project.aux.
+) (APS360_Project.aux)
 \openout1 = `APS360_Project.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
@@ -389,12 +388,14 @@ fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring OFF on input line 55.
+ (APS360_Project.out) (APS360_Project.out)
 \@outlinefile=\write3
 \openout3 = `APS360_Project.out'.
 
 LaTeX Font Info:    Trying to load font information for U+msa on input line 59.
 
- (C:\Users\Hecan\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+
+(C:\Users\Hecan\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 59.
@@ -409,25 +410,10 @@ LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 5
 (C:\Users\Hecan\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-
-LaTeX Warning: Reference `last_page' on page 1 undefined on input line 63.
-
-
-LaTeX Warning: Reference `gen_inst' on page 1 undefined on input line 94.
-
-
-LaTeX Warning: Reference `headings' on page 1 undefined on input line 94.
-
-
-LaTeX Warning: Reference `others' on page 1 undefined on input line 94.
-
 [1{C:/Users/Hecan/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/He
 can/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
 
 ]
-
-LaTeX Warning: Reference `others' on page 2 undefined on input line 114.
-
 
 Package natbib Warning: Citation `Hinton06' on page 2 undefined on input line 1
 50.
@@ -437,14 +423,11 @@ Package natbib Warning: Citation `Bengio+chapter2007' on page 2 undefined on in
 put line 152.
 
 [2]
-<Figs/td-deep-learning.jpg, id=32, 1204.5pt x 903.375pt>
+<Figs/td-deep-learning.jpg, id=83, 1204.5pt x 903.375pt>
 File: Figs/td-deep-learning.jpg Graphic file (type jpg)
 <use Figs/td-deep-learning.jpg>
 Package pdftex.def Info: Figs/td-deep-learning.jpg  used on input line 187.
 (pdftex.def)             Requested size: 238.49341pt x 178.86604pt.
-
-
-LaTeX Warning: Reference `sample-table' on page 3 undefined on input line 196.
 
 
 Package natbib Warning: Citation `goodfellow2016deep' on page 3 undefined on in
@@ -490,34 +473,21 @@ Package natbib Warning: There were undefined citations.
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `APS360_Project.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `APS360_Project.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  8E027B5D866234B19D088261C94EC1AC;2241.
+Package rerunfilecheck Info: File `APS360_Project.out' has not changed.
+(rerunfilecheck)             Checksum: 8E027B5D866234B19D088261C94EC1AC;2241.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 245 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 11021 strings out of 474486
- 164003 string characters out of 5743756
+ 11044 strings out of 474486
+ 164633 string characters out of 5743756
  1944542 words of memory out of 5000000
- 33106 multiletter control sequences out of 15000+600000
+ 33123 multiletter control sequences out of 15000+600000
  594064 words of font info for 106 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,17n,79p,258b,510s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,17n,79p,334b,510s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Hecan/AppData/Local/Programs/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmbx10.pfb><C:/Users/Hecan/AppData/Local/Programs/MiKTeX/fonts/ty
 pe1/public/amsfonts/cm/cmex10.pfb><C:/Users/Hecan/AppData/Local/Programs/MiKTeX
@@ -538,9 +508,9 @@ Data/Local/Programs/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Users/Hecan
 /AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Hecan
 /AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Hecan
 /AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on APS360_Project.pdf (6 pages, 346397 bytes).
+Output written on APS360_Project.pdf (6 pages, 352558 bytes).
 PDF statistics:
- 152 PDF objects out of 1000 (max. 8388607)
+ 201 PDF objects out of 1000 (max. 8388607)
  27 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 118 words of extra memory for PDF output out of 10000 (max. 10000000)
 

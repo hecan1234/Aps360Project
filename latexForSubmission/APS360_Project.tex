@@ -63,9 +63,51 @@ This template should be used for all your project related reports in APS360 cour
 ----Total Pages: \pageref{last_page}
 \end{abstract}
 
+\section{Introduction }
+
+Facial expression detection has many different applications such as marketing and psychology, human-computer interaction. Leveraging deep learning, our project aims to develop a facial expression detection model capable of accurately identifying and categorizing emotions in static facial images and dynamic image sequences. For marketing purposes, facial expression detection can help personalize content delivery based on users' emotional responses. An example would be to continue showing content that has regularly made a user “happy”. For psychology purposes, facial expression detection can help with mental health diagnosis such as detecting signs of depression, anxiety, trauma. Deep learning has demonstrated extraordinary success in image classification. In essence, this is an image classification problem by using facial features in order to classify an emotion. Due to this, deep learning is well suited for a facial expression detection project.
+
+\section{Background/related work}
+
+The GitHub page discusses using Convolutional Neural Networks (CNNs) and transfer learning for facial recognition, focusing on classifying faces by specific metrics. Inspired by this, our project aims to adapt this framework to detect emotions like smiles, anger, and sadness in facial expressions. We plan to use the same facial image dataset from the recognition project, applying a new labeling scheme to annotate emotions for training our CNN.  Our project's architecture could follow the facial recognition project, with modifications for emotion detection. This involves adjusting the neural network to capture the emotional expressions effectively.
+In essence, for our project, we could repurpose this facial recognition technology for emotion detection, using a shared dataset and transfer learning to develop a model that classifies facial expressions into specific emotions. This streamlined approach aims for efficiency and accuracy in bridging facial recognition and emotion detection. We can take a pre-trained model that uses architecture such as ResNet and apply adjustment to make it fit for our usage. There also needs to be a pre-processing step that our team could develop and look into to prepare all data input for better recognition, base on paper from deep learning survey, a preprocessing step to align and highlight facial structure and area allows for the data input to have better quality and accuracy, leading to trained model that has better prediction and less losses
+Citation:
+https://github.com/jeffprosise/Deep-Learning/blob/master/Facial%20Recognition%20(Transfer%20Learning).ipynb 
+
+James:
+The DISFA dataset comprises 27 videos, totaling 130,788 frames of facial expressions, and focuses on spontaneous facial expressions to more accurately capture the natural nuances of these expressions. It serves as a dataset for models to train on. The author of this paper annotated the dataset based on the Facial Action Coding System (FACS), marking action units (AUs) for different levels of intensity. For our purposes, we can utilize these intensity annotations to develop new models that recognize not only the presence of an emotion but also its intensity. This approach enhances the classification problem by allowing the model to capture more intricate details of human emotions.
+https://paperswithcode.com/dataset/disfa 
+The RAF-DB consists of 29,672 facial images tagged with basic or compound expressions, collected under real-world conditions. It encompasses a wide range of variability in age, gender, ethnicity, head poses, lighting conditions, and occlusions. While the DISFA dataset provides depth, the RAF-DB offers breadth. It is instrumental in training models to identify facial features in photos that represent real-world scenarios. By utilizing this dataset, we can explore how occlusions, lighting variations, and head poses affect the recognition process. This, in turn, increases the reliability of the model in real-world applications.
+https://paperswithcode.com/dataset/raf-db 
+Alan:
+The following paper goes through many different models used in Facial Expression Recognition (FER). Some of which are described below.
+
+Network Ensemble methods in (FER) involve the integration of spatial and temporal information from various networks and combining their outputs to improve performance. One example is a multi-channel network that extracted spatial and temporal information from emotion-expressing faces and changes between emotional and neutral faces.
+
+Deep Spatiotemporal Networks are specifically designed to capture both spatial and temporal dependencies in consecutive frames, making them well-suited for FER tasks on dynamic sequences. These networks typically combine architectures such as Recurrent Neural Networks (RNNs) and Convolutional 3D (C3D) models. RNNs capture temporal dynamics of the learned features. C3D extends traditional CNNs by adding a 3D filter over very short video clips. 
+
+https://ieeexplore.ieee.org/abstract/document/9039580
 
 
-\section{Project Document Submission for APS360 Course}
+\section{Data Processing}
+
+\section{Architecture}
+We plan on using a convolutional neural network with max pooling to reduce the spatial dimensions of the feature map. Padding should be used to preserve the edges of the images where distinct facial features may be located. For the activation function, ReLU will be used.
+
+\section{Baseline model}
+In the development of a Convolutional Neural Network (CNN) for face detection and facial recognition of facial expressions, our team plans to leverage established baseline models that utilize CNN architectures, such as AlexNet and ResNet. These will serve as a solid foundation for comparison, enabling us to test and benchmark our results effectively. Additionally, we will consider utilizing models pre-trained on architectures like VGG, time permitting. Employing pre-trained models based on ResNet or VGG as the backbone architecture allows us to use datasets such as the FERDataset or VGGFace2. This approach facilitates the evaluation of the impact of hyperparameter modifications, as well as the effects of increasing or decreasing the number of layers in our architecture, to fine-tune and adjust our model for enhanced accuracy.There are pre-existing models available in open-source GitHub repositories that have been trained with ResNet. For instance, the FaceNet project hosted at https://github.com/davidsandberg/facenet offers a pre-trained model using ResNet, boasting high accuracy and providing valuable data for comparison. Furthermore, the project available at https://github.com/WuJie1010/Facial-Expression-Recognition.Pytorch presents models trained with VGG19 and ResNet18, offering an additional benchmark for our results
+
+\section{Ethical consideration}
+The primary ethical concern for the topic of this project involves privacy and consent. Our model requires the input of photos or videos, which contain facial data that is inherently personal and sensitive. The collection and analysis of individuals’ images should be conducted with consent. We must ensure that individuals are fully informed about the data being collected, its intended use, and with whom it will be shared. This is particularly important in the current era, given the potential misuse of deepfake technology and other tools that can be exploited for impersonating individuals.
+
+Another significant ethical issue is the potential for inherent bias within the detection models. These biases often come from imbalanced training datasets that fail to adequately represent minorities within the human population across dimensions such as race, gender, age, and culture. Quoting Joy Buolamwini’s findings in "The Coded Gaze," it is evident that artificial intelligence systems, especially those involving facial analysis technologies, can reflect the biases of their creators and the datasets they are trained on. Many models have been shown to exhibit lower accuracy for women of color, highlighting a troubling discrepancy. This issue underscores the importance of fairness and equity in the field and points to the need for increased transparency and accountability within the machine learning community. To mitigate these issues, it is essential to utilize a diverse and representative dataset during the training phase. Ensuring that the dataset includes sufficient representation from various demographic groups and ethnicities is vital to achieving a fair training process. This approach guarantees that the resulting model performs consistently across all individuals without inherent biases.
+
+\section{Project plan }
+
+
+
+\section{Linked to github}
+https://github.com/hecan1234/Aps360Project
 
 
 The format for the submissions is a variant of the ICLR 2022 format.

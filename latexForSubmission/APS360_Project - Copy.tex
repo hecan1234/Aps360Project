@@ -14,8 +14,6 @@
 \usepackage{hyperref}
 \usepackage{url}
 \usepackage{graphicx}
-\usepackage{natbib}
-
 
 %######## APS360: Put your project Title here
 \title{CNN Facial Expression Detection Model}
@@ -66,7 +64,7 @@ Illustration of our facial expression model
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[width=0.6\textwidth]{aps360.png}
+\includegraphics[width=0.6\textwidth]{Figs/aps360.png}
 \end{center}
 \caption{Illustration of architectureal concept}
 \end{figure}
@@ -80,7 +78,7 @@ This GitHub page discusses using Convolutional Neural Networks (CNNs) and transf
 focusing on classifying faces by specific metrics. Our project could adapt this framework to detect emotions like smiles, anger, and sadness in facial expressions. We can use a similar dataset to the project above, applying a new labeling scheme to annotate emotions for training our CNN.  This involves adjusting the neural network to capture the emotional expressions and using a different labeling system to train and monitor losses. In essence, for our project, we could repurpose this facial recognition model and code for emotion detection, using a shared dataset and transfer learning to develop a model that classifies facial expressions into specific emotions. We can take a pre-trained model that uses architecture such as ResNet and apply adjustment to make it fit for our usage. There also needs to be a pre-processing step that our team could develop and look into. Preprocessing will  prepare all data input for better recognition, base on paper from deep learning survey, a preprocessing step to align and highlight facial structure and area allows for the data input to have better quality and accuracy, leading to trained model that has better prediction and less losses.
 
 Another project we have taken a look into that exists is 
-\textit{facenet} \cite{Davidsandberg} available at
+\textit{facenet} \citet{Davidsandberg18} available at
 \url{https://github.com/davidsandberg/facenet}.
  This project again is a facial recognition model that uses ResNet to train a facial detection and recognition model. From this project, we could modify the label to have it fit for emotions instead of specific character and person. The repo also mentions a use of a pre-processing alignment to pre-align and modify input data for better accuracy and something we can look into in our project to incorporate for better reliability and less losses.
 
@@ -111,7 +109,7 @@ The data will need to be formatted into directories based on the different emoti
 The dataset will be split into training, validation and testing sets, either 80-10-10 or 70-15-15.
 
 \section{Architecture}
-We plan on using a convolutional neural network with max pooling to reduce the spatial dimensions of the feature map. Padding should be used to preserve the edges of the images where distinct facial features may be located. Hyperparameters will also be tuned such as learning rate, batch size, and the number of epochs. For the activation function, ReLU will be used.
+We plan on using a convolutional neural network with max pooling to reduce the spatial dimensions of the feature map. Padding should be used to preserve the edges of the images where distinct facial features may be located. For the activation function, ReLU will be used.
 
 \section{Baseline model}
 In the development of a Convolutional Neural Network (CNN) for face detection and facial recognition of facial expressions, our team plans to leverage established baseline models that utilize CNN architectures, such as AlexNet and ResNet. These will serve as a solid foundation for comparison, enabling us to test and benchmark our results effectively. Additionally, we will consider utilizing models pre-trained on architectures like VGG, time permitting. Employing pre-trained models based on ResNet or VGG as the backbone architecture allows us to use datasets such as the FERDataset or VGGFace2. This approach facilitates the evaluation of the impact of hyperparameter modifications, as well as the effects of increasing or decreasing the number of layers in our architecture, to fine-tune and adjust our model for enhanced accuracy.There are pre-existing models available in open-source GitHub repositories that have been trained with ResNet. For instance, the FaceNet project hosted at 
@@ -129,7 +127,7 @@ Another significant ethical issue is the potential for inherent bias within the 
 
 
 \section{Project plan }
-Above in Table 1 is a table summarizing each team member’s tasks and deadlines.
+Please see table 1 above for more detail plan and work division among group members
 
 \begin{table}[t]
 \caption{Project Plan and Breakdown}
@@ -139,30 +137,30 @@ Above in Table 1 is a table summarizing each team member’s tasks and deadlines
 \hline
 \multicolumn{1}{c}{\bf Person} & \multicolumn{1}{c}{\bf Task} & \multicolumn{1}{c}{\bf Deadline} & \multicolumn{1}{c}{\bf Progress} \\
 \hline
-Alan                & Proposal - Introduction                            & Sunday 11th February & Completed \\
-James                & Proposal - Illustration                            & Sunday 11th February & Completed \\
+                & Proposal - Introduction                            & Sunday 11th February & Completed \\
+                & Proposal - Illustration                            & Sunday 11th February & Completed \\
 Team           & Proposal - Background \& Related Work              & Sunday 11th February & Completed \\
 Angelica       & Proposal - Data Processing                         & Sunday 11th February & Completed \\
-Alan                & Proposal - Architecture                            & Sunday 11th February & Completed \\
-Hecan                & Proposal - Baseline Model                          & Sunday 11th February & Completed \\
-James                & Proposal - Ethical Considerations                  & Sunday 11th February & Completed \\
-Angelica                & Proposal - Project Plan                            & Sunday 11th February & Completed \\
-James                & Proposal - Risk Register                           & Sunday 11th February & Completed \\
+                & Proposal - Architecture                            & Sunday 11th February & Completed \\
+                & Proposal - Baseline Model                          & Sunday 11th February & Completed \\
+                & Proposal - Ethical Considerations                  & Sunday 11th February & Completed \\
+                & Proposal - Project Plan                            & Sunday 11th February & Completed \\
+                & Proposal - Risk Register                           & Sunday 11th February & Completed \\
 Hecan          & GitHub Setup                                       & Monday 5th February  & Completed \\
 Team           & Proposal - Structure, Grammar \& Mechanics        & Sunday 12th February & Completed \\
 Hecan          & Proposal - Format to Latex                         & Monday 12th February & Completed \\
-Pending                & Progress Report - Project Description              &                      & Not Started \\
-Pending                & Progress Report - Summary of Responsibilities and Contributions & & Not Started \\
-Pending                & Progress Report - Data Processing                  &                      & Not Started \\
-Pending                & Progress Report - Baseline Model                   &                      & Not Started \\
-Pending                & Progress Report - Primary Model                    &                      & Not Started \\
-Pending                & Data Splitting \& Processing                       &                      & Not Started \\
-Pending                & Model Creation                                     &                      & Not Started \\
-Pending                & Demonstration                                      &                      & Not Started \\
-Pending               & Results                                            &                      & Not Started \\
-Pending               & Takeaways                                          &                      & Not Started \\
-Pending                & Report Write-Up                                    &                      & Not Started \\
-Team                & Presentation Slides                                &                      & Not Started \\
+                & Progress Report - Project Description              &                      & Not Started \\
+                & Progress Report - Summary of Responsibilities and Contributions & & Not Started \\
+                & Progress Report - Data Processing                  &                      & Not Started \\
+                & Progress Report - Baseline Model                   &                      & Not Started \\
+                & Progress Report - Primary Model                    &                      & Not Started \\
+                & Data Splitting \& Processing                       &                      & Not Started \\
+                & Model Creation                                     &                      & Not Started \\
+                & Demonstration                                      &                      & Not Started \\
+                & Results                                            &                      & Not Started \\
+                & Takeaways                                          &                      & Not Started \\
+                & Report Write-Up                                    &                      & Not Started \\
+                & Presentation Slides                                &                      & Not Started \\
 \hline
 \end{tabular}
 \end{center}
@@ -454,9 +452,27 @@ https://github.com/hecan1234/Aps360Project
 % \egroup
 % \vspace{0.25cm}
 
+
+
+\section{Final instructions}
+Do not change any aspects of the formatting parameters in the style files.
+In particular, do not modify the width or length of the rectangle the text
+should fit into, and do not change font sizes (except perhaps in the
+\textsc{References} section; see below). Please note that pages should be
+numbered.
+
+
+\subsubsection*{Author Contributions}
+If you'd like to, you may include  a section for author contributions as is done
+in many journals. This is optional and at the discretion of the authors.
+
+\subsubsection*{Acknowledgments}
+Use unnumbered third level headings for the acknowledgments. All
+acknowledgments, including those to funding agencies, go at the end of the paper.
+
 \label{last_page}
 
-\bibliography{aps360_ref}
+\bibliography{APS360_ref}
 \bibliographystyle{iclr2022_conference}
 
 \end{document}
